@@ -21,9 +21,9 @@ It should now be installed.
 ## Usage
 
 Basic usage: 
-'''javascript
+```javascript
 Ozon.fire("success", "Hello, world!", "top-left")
-'''
+```
 
 ## Dependencies 
   - Font Awesome (https://fontawesome.com/)
