@@ -6,7 +6,7 @@ A pretty and easy-to-use Javascript framework for customizable popup boxes, feat
 
 ## Installation
 
-Include all the files found in this repository in your project.  
+Include the ***OzonAlerts*** folder in your project folder.  
 
 **OzonAlerts.js** needs to be included with a script tag in your HTML as shown below:
 
