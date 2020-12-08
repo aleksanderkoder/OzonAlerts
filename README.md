@@ -6,22 +6,24 @@ A pretty and easy-to-use framework for customizable popup boxes for the web, fea
 
 ## Installation
 
-Include the files ***"OzonAlerts.js"*** and ***"Ozon-css.css"*** in your project folder. 
+Include all the files found in this repository in your project.  
 
-*OzonAlerts.js* can be included with a script tag in your HTML as shown below:
+*OzonAlerts.js* needs to be included with a script tag in your HTML as shown below:
 
-> <script type="text/javascript" src="OzonAlerts.js"></script>
+> <script type="text/javascript" src="OzonAlerts/OzonAlerts.js"></script>
 
-*Ozon-css.css* can be included in the head section of your HTML as shown below: 
+*Ozon-css.css* needs to be included in the head section of your HTML as shown below: 
 
-> <link rel="stylesheet" href="Ozon-css.css"/>
+> <link rel="stylesheet" href="OzonAlerts/Ozon-css.css"/>
 
 It should now be installed. 
 
 ## Usage
 
 Basic usage: 
-- Ozon.fire("success", "Hello, world!", "top-left")
+'''javascript
+Ozon.fire("success", "Hello, world!", "top-left")
+'''
 
 ## Dependencies 
   - Font Awesome (https://fontawesome.com/)
