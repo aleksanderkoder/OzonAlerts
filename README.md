@@ -12,7 +12,7 @@ Include the files ***"OzonAlerts.js"*** and ***"Ozon-css.css"*** in your project
 
 *Ozon-css.css* can be included in the head section of your HTML as shown below: 
 
-> <link rel="stylesheet" href="Ozon-css.css">
+***<link rel="stylesheet" href="Ozon-css.css">***
 
 It has now been installed. 
 
