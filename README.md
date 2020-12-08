@@ -1,10 +1,12 @@
+ ** WORK IN PROGRESS **
+
 # OzonAlerts
- ** WORK IN PROGRESS ** 
+ 
 A pretty and easy-to-use framework for customizable popup boxes for the web, featuring a modern and elegant design. 
 
 ## Installation
 
-Include the files ***"OzonAlerts.js"*** and ***"Ozon-css.css"*** in your project. 
+Include the files ***"OzonAlerts.js"*** and ***"Ozon-css.css"*** in your project folder. 
 
 *OzonAlerts.js* can be included with a script tag in your HTML as shown below:
 
