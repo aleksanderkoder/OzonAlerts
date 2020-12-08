@@ -1,6 +1,6 @@
  ** WORK IN PROGRESS **
 
-# OzonAlerts
+# OzonAlerts.js
  
 A pretty and easy-to-use framework for customizable popup boxes for the web, featuring a modern and elegant design. 
 
