@@ -1,5 +1,6 @@
 # OzonAlerts
-A pretty, yet easy to use framework for customizable popup boxes for the web, featuring a modern and elegant design. 
+ ** WORK IN PROGRESS ** 
+A pretty and easy-to-use framework for customizable popup boxes for the web, featuring a modern and elegant design. 
 
 # Usage
 
