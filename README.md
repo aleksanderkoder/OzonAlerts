@@ -14,7 +14,7 @@ Include all the files found in this repository in your project.
 
 **OzonAlerts.css** needs to be included in the head section of your HTML as shown below: 
 
-```<link rel="stylesheet" href="OzonAlerts/Ozon-css.css"/>```
+```<link rel="stylesheet" href="OzonAlerts/OzonAlerts.css"/>```
 
 It should now be installed. 
 
