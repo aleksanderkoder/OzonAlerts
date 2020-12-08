@@ -12,7 +12,7 @@ Include all the files found in this repository in your project.
 
 ``` <script type="text/javascript" src="OzonAlerts/OzonAlerts.js"></script>```
 
-**Ozon-css.css** needs to be included in the head section of your HTML as shown below: 
+**OzonAlerts.css** needs to be included in the head section of your HTML as shown below: 
 
 ```<link rel="stylesheet" href="OzonAlerts/Ozon-css.css"/>```
 
