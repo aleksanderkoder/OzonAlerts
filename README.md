@@ -10,11 +10,11 @@ Include all the files found in this repository in your project.
 
 *OzonAlerts.js* needs to be included with a script tag in your HTML as shown below:
 
-```html <script type="text/javascript" src="OzonAlerts/OzonAlerts.js"></script>```
+``` <script type="text/javascript" src="OzonAlerts/OzonAlerts.js"></script>```
 
 *Ozon-css.css* needs to be included in the head section of your HTML as shown below: 
 
-> <link rel="stylesheet" href="OzonAlerts/Ozon-css.css"/>
+```<link rel="stylesheet" href="OzonAlerts/Ozon-css.css"/>```
 
 It should now be installed. 
 
