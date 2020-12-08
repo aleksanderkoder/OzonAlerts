@@ -8,11 +8,11 @@ A pretty and easy-to-use framework for customizable popup boxes for the web, fea
 
 Include all the files found in this repository in your project.  
 
-*OzonAlerts.js* needs to be included with a script tag in your HTML as shown below:
+**OzonAlerts.js** needs to be included with a script tag in your HTML as shown below:
 
 ``` <script type="text/javascript" src="OzonAlerts/OzonAlerts.js"></script>```
 
-*Ozon-css.css* needs to be included in the head section of your HTML as shown below: 
+**Ozon-css.css** needs to be included in the head section of your HTML as shown below: 
 
 ```<link rel="stylesheet" href="OzonAlerts/Ozon-css.css"/>```
 
