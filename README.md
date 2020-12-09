@@ -16,7 +16,7 @@ Include the ***OzonAlerts*** folder in your project folder.
 
 ```<link rel="stylesheet" href="OzonAlerts/OzonAlerts.css"/>```
 
-It should now be installed. 
+It is now ready to be used.  
 
 ## Usage
 
