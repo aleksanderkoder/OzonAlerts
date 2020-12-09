@@ -16,7 +16,7 @@ Include the ***OzonAlerts*** folder in your project folder.
 
 The necessary CSS-file (**OzonAlerts.css**) will be automatically injected into your HTML via the Javascript file mentioned above. 
 
-OzonAlerts.js is now ready!  
+OzonAlerts.js should now be ready for use. 
 
 ## Usage
 
