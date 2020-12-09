@@ -1,4 +1,6 @@
  ** WORK IN PROGRESS **
+ 
+ This framework is currently being developed and is by no means production ready. 
 
 # OzonAlerts.js
  
