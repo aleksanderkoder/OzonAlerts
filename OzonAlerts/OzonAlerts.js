@@ -1,7 +1,15 @@
+// let head  = document.getElementsByTagName('head')[0];
+// let link  = document.createElement('link');
+// link.rel  = 'stylesheet';
+// link.type = 'text/css';
+// link.href = 'OzonAlerts.css';
+// head.appendChild(link);
+
 class Ozon 
       {
         static fire(type, message, position) 
         {
+          console.log("Firing Ozon..."); 
           let el = document.createElement("div");
           el.id = "Ozon";
           let content = document.createElement("table");
