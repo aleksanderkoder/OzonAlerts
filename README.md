@@ -12,11 +12,9 @@ Include the ***OzonAlerts*** folder in your project folder.
 
 ``` <script type="text/javascript" src="OzonAlerts/OzonAlerts.js"></script>```
 
-**OzonAlerts.css** needs to be included in the head section of your HTML as shown below: 
+The necessary CSS-file (**OzonAlerts.css**) will be automatically injected into your HTML via the Javascript file. 
 
-```<link rel="stylesheet" href="OzonAlerts/OzonAlerts.css"/>```
-
-It is now ready to be used.  
+OzonAlerts.js is now ready!  
 
 ## Usage
 
