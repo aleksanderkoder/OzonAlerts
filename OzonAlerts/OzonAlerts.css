@@ -2,15 +2,15 @@
   position: absolute;
   width: 310px;
   height: auto;
-  margin: 0.4%;
+  margin: 0.8%;
   padding: 10px;
   padding-left: 25px;
   padding-right: 25px;
-  border-radius: 2px;
+  border-radius: 4px;
   font-size: 20px;
   text-align: center;
   color: white;
-  background-image: url(ugh.png);
+  background-image: url(ughFull.jpg);
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   font-family: "DM";
