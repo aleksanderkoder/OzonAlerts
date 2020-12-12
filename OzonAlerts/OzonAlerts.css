@@ -10,13 +10,23 @@
   font-size: 20px;
   text-align: center;
   color: white;
-  background-image: url(ughFull.jpg);
+  background-image: url(ugh3.jpg);
+  background-size: cover;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   font-family: "DM";
   text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.1);
   animation: fadeIn ease 1s;
 }
+
+#OzonTable {
+  width: 100%;
+}
+#OzonTable button {
+  margin-right: 30px; 
+  margin-left: 30px; 
+}
+
 
 @font-face {
   font-family: "DM";
