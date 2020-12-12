@@ -17,11 +17,9 @@ class Ozon
           let content = document.createElement("table");
           content.id = "OzonTable"; 
           let contentRow1 = document.createElement("tr");
-          contentRow1.width = "50%";
           let contentData1 = document.createElement("td");
           let contentData2 = document.createElement("td");
           contentData2.style.width = "100%";
-          contentData2.style.textAlign = "center";
 
           // Creates necessary remaining html elements
           el.appendChild(content);
