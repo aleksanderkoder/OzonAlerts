@@ -41,23 +41,27 @@ Ozon.fire("success", "Hello, world!", "top-left","Yes thanks!","No thanks!",
 
 Method parameter structure:
 ```javascript
-Ozon.fire(icon, message, position, confirmButtonText, cancelButtonText, onConfirm, onCancel)
+Ozon.fire(icon, message, position, type, confirmButtonText, cancelButtonText, onConfirm, onCancel)
 ```
 
 The first parameter *icon* will choose what icon is used. There are three options:
- 1. success
- 2. error
- 3. info
+ 1. "success"
+ 2. "error"
+ 3. "info"
  
 The second parameter *message* is where you input the message you want to show in your alert. 
 
 The third parameter *position* controls where on the screen the alert should be positioned. There are 6 options: 
- 1. top-left
- 2. top-middle
- 3. top-right
- 4. bottom-left
- 5. bottom-middle
- 6. bottom-right
+ 1. "top-left"
+ 2. "top-middle"
+ 3. "top-right"
+ 4. "bottom-left"
+ 5. "bottom-middle"
+ 6. "bottom-right"
+
+The fourth parameter *type* (optional) chooses what type of alert should be shown. There are two options:
+ 1. "notification" - Default 
+ 2. "dialog"
 
 ## Dependencies 
   - Font Awesome (https://fontawesome.com/)
