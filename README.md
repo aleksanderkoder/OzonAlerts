@@ -63,6 +63,16 @@ The fourth parameter *type* (optional) chooses what type of alert should be show
  1. "notification" - Default 
  2. "dialog"
 
+The fifth parameter *confirmButtonText* sets the text shown inside the "confirm" dialog button.
+ - Example value: "I got it!"
+
+The sixt parameter *cancelButtonText* sets the text shown inside the "cancel" dialog button.
+ - Example value: "No thanks!"
+ 
+ The seventh and eight parameters *onConfirm* and *onCancel* controls what should happen when each of the two dialog buttons are pressed.
+ These parameters take a function containing whatever code you want. 
+  - See the "advanced usage" example under the *Usage* section for an exact example of how these parameters are used. 
+  
 ## Dependencies 
   - Font Awesome (https://fontawesome.com/)
     Needed for icons to show up. 
