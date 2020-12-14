@@ -29,11 +29,11 @@ Ozon.fire("success", "Hello, world!", "top-left")
 Advanced usage: 
 ```javascript
 Ozon.fire("success", "Hello, world!", "top-left","Yes thanks!","No thanks!", 
-function () { 
-   alert("You just pressed the confirm button!")}, 
-function () {
-   alert("You just pressed the cancel button!")}
-   )
+   function () { 
+      alert("You just pressed the confirm button!")}, 
+   function () {
+      alert("You just pressed the cancel button!")}
+      )
 ```
 
 
