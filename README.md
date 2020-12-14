@@ -39,14 +39,19 @@ function () {
 
 ***Parameters***
 
-The first parameter "success" will choose what icon is used. There are three options:
+Method parameter structure:
+```javascript
+Ozon.fire(icon, message, position, confirmButtonText, cancelButtonText, onConfirm, onCancel)
+```
+
+The first parameter *icon* will choose what icon is used. There are three options:
  1. success
  2. error
  3. info
  
-The second parameter "Hello, world!" is where you input the message you want to show in your alert. 
+The second parameter *message* is where you input the message you want to show in your alert. 
 
-The third parameter controls where on the screen the alert should be positioned. There are 6 options: 
+The third parameter *position* controls where on the screen the alert should be positioned. There are 6 options: 
  1. top-left
  2. top-middle
  3. top-right
