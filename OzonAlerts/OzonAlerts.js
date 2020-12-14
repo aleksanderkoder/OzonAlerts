@@ -8,17 +8,18 @@ head.appendChild(link);
 
 class Ozon 
       {
-        static fire(icon, message, position, type = "notification") 
+        static fire(icon, message, position, type = "notification", btnConfirmValue = "Confirm", btnCancelValue = "Cancel", onConfirm = function() {}, onCancel = function () {}) 
         {
           console.log("Firing Ozon..."); 
 
-          let el = document.createElement("div");
+          // Creates essential elements
+          const el = document.createElement("div");
           el.id = "Ozon";
-          let content = document.createElement("table");
+          const content = document.createElement("table");
           content.id = "OzonTable"; 
-          let contentRow1 = document.createElement("tr");
-          let contentData1 = document.createElement("td");
-          let contentData2 = document.createElement("td");
+          const contentRow1 = document.createElement("tr");
+          const contentData1 = document.createElement("td");
+          const contentData2 = document.createElement("td");
           contentData2.style.width = "100%";
 
           // Creates necessary remaining html elements
@@ -46,7 +47,8 @@ class Ozon
               '<i style="color: white;" class="fas fa-info"></i>';
           }
 
-          if (type == "notification") // Creates Ozon instance of type "notification" based on "type" parameter
+          // Creates Ozon instance of type "notification" based on "type" parameter
+          if (type == "notification") 
           {
             // Appends second table data 
             contentRow1.appendChild(contentData2);
@@ -54,16 +56,18 @@ class Ozon
           else if (type == "dialog")  // Creates Ozon instance of type "dialog" based on "type" parameter
           {
             // Creates necessary table elements for dialog
-            let contentRow2 = document.createElement("tr");
-            let contentRow3 = document.createElement("tr");
-            let contentData3 = document.createElement("td");
-            let contentData4 = document.createElement("td");
+            const contentRow2 = document.createElement("tr");
+            const contentRow3 = document.createElement("tr");
+            const contentData3 = document.createElement("td");
+            const contentData4 = document.createElement("td");
 
              
-            let btnConfirm = document.createElement("button")
-            let btnCancel = document.createElement("button")
-            btnConfirm.innerHTML = "Confirm";
-            btnCancel.innerHTML = "Cancel";
+            const btnConfirm = document.createElement("button")
+            btnConfirm.id = "OzonBtnConfirm"; 
+            btnConfirm.innerHTML = btnConfirmValue; 
+            const btnCancel = document.createElement("button")
+            btnCancel.id = "OzonBtnCancel";
+            btnCancel.innerHTML = btnCancelValue;
 
             // Appends elements to parent element
             content.appendChild(contentRow2);
@@ -72,10 +76,9 @@ class Ozon
             contentRow2.appendChild(contentData2);
             contentRow3.appendChild(contentData3);
             contentRow3.appendChild(contentData4);
-            contentData3.appendChild(btnCancel);
             contentData3.appendChild(btnConfirm);
-            
-
+            contentData3.appendChild(btnCancel);
+             
           }
                        
           // Handles position based on parameter "position"
@@ -123,14 +126,45 @@ class Ozon
           }, 1000);
 
           document.body.appendChild(el);
+          
+          // Handles behavior of Ozon-alert upon deletion based on type
+          if (type == "notification")
+          {
+            setTimeout(function () 
+            {
+              el.style.animation = "fadeOut ease 1s";
+            }, 7000);
 
-          setTimeout(function () {
-            el.style.animation = "fadeOut ease 1s";
-          }, 7000);
+            setTimeout(function () 
+            {
+              el.parentNode.removeChild(el);
+            }, 8000); 
+          }
+          else if (type == "dialog")
+          {
+            OzonBtnConfirm.onclick = function () 
+            {
+              onConfirm(); 
+              removeOzonAlert(el); 
+            }
 
-          setTimeout(function () {
-            el.parentNode.removeChild(el);
-          }, 8000);
+            OzonBtnCancel.onclick = function () 
+            {
+              onCancel(); 
+              removeOzonAlert(el);
+            }
+          }
+          
+          
+          // Function that removes a given Ozon-element with a fadeOut-effect
+          function removeOzonAlert(element)
+          {
+            element.style.animation = "fadeOut ease 0.5s";
+            setTimeout(function () 
+            {
+              element.parentNode.removeChild(element);
+            }, 500);
+          }
           
         }
       }
