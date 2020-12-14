@@ -22,11 +22,8 @@
 #OzonTable {
   width: 100%;
   margin: auto; 
-  padding: 10px;
 }
-#OzonTable td {
-  padding: 10px;
-}
+
 #OzonTable button { 
   border-radius: 2px;
   border: none; 

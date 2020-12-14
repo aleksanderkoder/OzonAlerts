@@ -55,6 +55,9 @@ class Ozon
           }
           else if (type == "dialog")  // Creates Ozon instance of type "dialog" based on "type" parameter
           {
+            content.style.padding = "10px"; 
+            contentData2.style.padding = "15px";
+
             // Creates necessary table elements for dialog
             const contentRow2 = document.createElement("tr");
             const contentRow3 = document.createElement("tr");
