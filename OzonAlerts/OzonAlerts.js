@@ -8,7 +8,7 @@ head.appendChild(link);
 
 class Ozon 
       {
-        static fire(icon, message, position, type = "notification", btnConfirmValue = "Confirm", btnCancelValue = "Cancel", onConfirm = function() {}, onCancel = function () {}) 
+        static fire(icon, message, position, type = "notification", btnConfirmText = "Confirm", btnCancelText = "Cancel", onConfirm = function() {}, onCancel = function () {}) 
         {
           console.log("Firing Ozon..."); 
 
@@ -64,10 +64,10 @@ class Ozon
              
             const btnConfirm = document.createElement("button")
             btnConfirm.id = "OzonBtnConfirm"; 
-            btnConfirm.innerHTML = btnConfirmValue; 
+            btnConfirm.innerHTML = btnConfirmText; 
             const btnCancel = document.createElement("button")
             btnCancel.id = "OzonBtnCancel";
-            btnCancel.innerHTML = btnCancelValue;
+            btnCancel.innerHTML = btnCancelText;
 
             // Appends elements to parent element
             content.appendChild(contentRow2);
