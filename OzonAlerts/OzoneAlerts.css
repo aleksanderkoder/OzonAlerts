@@ -1,4 +1,4 @@
-#Ozon {
+#Ozone {
   position: absolute;
   width: 310px;
   height: auto;
@@ -19,12 +19,12 @@
   animation: fadeIn ease 0.5s;
 }
 
-#OzonTable {
+#OzoneTable {
   width: 100%;
   margin: auto; 
 }
 
-#OzonTable button { 
+#OzoneTable button { 
   border-radius: 2px;
   border: none; 
   padding: 5px;
@@ -33,15 +33,15 @@
   font-family: "Roboto";
 }
 
-#OzonTable button:hover {
+#OzoneTable button:hover {
   background-color: rgba(255, 255, 255, 0.7);
 }
 
-#OzonBtnConfirm {
+#OzoneBtnConfirm {
   margin-right: 30px; 
 }
 
-#OzonBtnCancel {
+#OzoneBtnCancel {
   margin-left: 30px;
 }
 

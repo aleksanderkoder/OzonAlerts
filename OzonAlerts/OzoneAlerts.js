@@ -3,20 +3,20 @@ let head  = document.getElementsByTagName('head')[0];
 let link  = document.createElement('link');
 link.rel  = 'stylesheet';
 link.type = 'text/css';
-link.href = 'OzonAlerts.css';
+link.href = 'OzoneAlerts.css';
 head.appendChild(link);
 
-class Ozon 
+class Ozone 
       {
         static fire(icon, message, position, type = "notification", confirmButtonText = "Confirm", cancelButtonText = "Cancel", onConfirm = function() {}, onCancel = function () {}) 
         {
-          console.log("Firing Ozon..."); 
+          console.log("Firing Ozone..."); 
 
           // Creates essential elements
           const el = document.createElement("div");
-          el.id = "Ozon";
+          el.id = "Ozone";
           const content = document.createElement("table");
-          content.id = "OzonTable"; 
+          content.id = "OzoneTable"; 
           const contentRow1 = document.createElement("tr");
           const contentData1 = document.createElement("td");
           const contentData2 = document.createElement("td");
@@ -47,13 +47,13 @@ class Ozon
               '<i style="color: white;" class="fas fa-info"></i>';
           }
 
-          // Creates Ozon instance of type "notification" based on "type" parameter
+          // Creates Ozone instance of type "notification" based on "type" parameter
           if (type == "notification") 
           {
             // Appends second table data 
             contentRow1.appendChild(contentData2);
           }
-          else if (type == "dialog")  // Creates Ozon instance of type "dialog" based on "type" parameter
+          else if (type == "dialog")  // Creates Ozone instance of type "dialog" based on "type" parameter
           {
             content.style.padding = "10px"; 
             contentData2.style.padding = "15px";
@@ -66,10 +66,10 @@ class Ozon
 
              
             const btnConfirm = document.createElement("button")
-            btnConfirm.id = "OzonBtnConfirm"; 
+            btnConfirm.id = "OzoneBtnConfirm"; 
             btnConfirm.innerHTML = confirmButtonText; 
             const btnCancel = document.createElement("button")
-            btnCancel.id = "OzonBtnCancel";
+            btnCancel.id = "OzoneBtnCancel";
             btnCancel.innerHTML = cancelButtonText;
 
             // Appends elements to parent element
@@ -128,9 +128,10 @@ class Ozon
             el.style.animation = "pulse 2s infinite";
           }, 1000);
 
+          // Finally appends alert box element to document
           document.body.appendChild(el);
           
-          // Handles behavior of Ozon-alert upon deletion based on type
+          // Handles behavior of Ozone-alert upon deletion based on type
           if (type == "notification")
           {
             setTimeout(function () 
@@ -145,22 +146,22 @@ class Ozon
           }
           else if (type == "dialog")
           {
-            OzonBtnConfirm.onclick = function () 
+            OzoneBtnConfirm.onclick = function () 
             {
               onConfirm(); 
-              removeOzonAlert(el); 
+              removeOzoneAlert(el); 
             }
 
-            OzonBtnCancel.onclick = function () 
+            OzoneBtnCancel.onclick = function () 
             {
               onCancel(); 
-              removeOzonAlert(el);
+              removeOzoneAlert(el);
             }
           }
           
           
-          // Function that removes a given Ozon-element with a fadeOut-effect
-          function removeOzonAlert(element)
+          // Function that removes a given Ozone-element with a fadeOut-effect
+          function removeOzoneAlert(element)
           {
             element.style.animation = "fadeOut ease 0.5s";
             setTimeout(function () 
