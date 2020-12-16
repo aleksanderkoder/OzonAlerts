@@ -37,7 +37,7 @@ Ozone.fire("success", "Would you like a cinnamon roll?", "top-left", "dialog", "
 
 Method parameter structure:
 ```javascript
-Ozon.fire(icon, message, position, type, confirmButtonText, cancelButtonText, onConfirm, onCancel)
+Ozone.fire(icon, message, position, type, confirmButtonText, cancelButtonText, onConfirm, onCancel)
 ```
 
 The first parameter *icon* will choose what icon is used. There are three options:
