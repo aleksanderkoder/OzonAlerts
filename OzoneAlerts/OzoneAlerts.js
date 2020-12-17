@@ -121,9 +121,17 @@ class Ozone
               el.style.right = 0;
               el.style.bottom = 0;
               break; 
+
+            case "center":  
+              el.style.left = 0;
+              el.style.right = 0;
+              el.style.marginLeft = "auto";
+              el.style.marginRight = "auto"; 
+              el.style.marginTop = "20%";
+              break; 
           }
 
-          // Handles animations upon creation and deletion of object
+          // Handles animations upon creation and deletion of Ozone element
           setTimeout(function () {
             el.style.animation = "pulse 2s infinite";
           }, 1000);

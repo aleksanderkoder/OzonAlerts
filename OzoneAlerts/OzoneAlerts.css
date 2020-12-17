@@ -17,6 +17,7 @@
   font-family: "Roboto";
   text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.1);
   animation: fadeIn ease 0.5s;
+  z-index: 100;
 }
 
 #OzoneTable {
