@@ -10,6 +10,14 @@ class Ozone
       {
         static fire(icon, message, position, type = "notification", confirmButtonText = "Confirm", cancelButtonText = "Cancel", onConfirm = function() {}, onCancel = function () {}) 
         {
+
+          // Destroys already existing Ozone instance when new instance is created
+          let expired; 
+          if(expired = document.getElementById("Ozone"))
+          {
+            expired.parentNode.removeChild(expired); 
+          }
+
           console.log("Firing Ozone..."); 
 
           // Creates essential elements
@@ -166,7 +174,6 @@ class Ozone
               removeOzoneAlert(el);
             }
           }
-          
           
           // Function that removes a given Ozone-element with a fadeOut-effect
           function removeOzoneAlert(element)
