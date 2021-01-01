@@ -16,7 +16,7 @@ Include the ***OzoneAlerts*** folder in your project folder.
 
 Remember to change the file paths in the above examples according to the structure of your project. 
 
-OzoneAlerts should now be ready for use. 
+OzoneAlerts.js should now be ready for use. 
 
 ## Usage
 
