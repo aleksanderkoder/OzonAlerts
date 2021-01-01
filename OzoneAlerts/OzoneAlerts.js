@@ -1,11 +1,3 @@
-// Injects the CSS-file 
-let head  = document.getElementsByTagName('head')[0];
-let link  = document.createElement('link');
-link.rel  = 'stylesheet';
-link.type = 'text/css';
-link.href = 'OzoneAlerts/OzoneAlerts.css';
-head.appendChild(link);
-
 class Ozone 
       {
         static fire(icon, message, position, type = "notification", confirmButtonText = "Confirm", cancelButtonText = "Cancel", onConfirm = function() {}, onCancel = function () {}) 
