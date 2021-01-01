@@ -60,7 +60,7 @@ The third parameter *position* controls where on the screen the alert should be 
 
 The fourth parameter *type* (optional) chooses what type of alert should be shown. There are two options:
  1. "notification" - (default) The standard slim variant. 
- 2. "dialog" - The full-sized type allowing user input via programmable buttons. 
+ 2. "dialog" - The full-sized variant allowing user input via programmable buttons. 
 
 The fifth parameter *confirmButtonText* (optional) sets the text shown inside the "confirm" dialog button.
  - Example value: "I got it!"
