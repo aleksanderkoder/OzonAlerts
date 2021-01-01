@@ -14,7 +14,7 @@ Include the ***OzoneAlerts*** folder in your project folder.
 
 ```<link rel="stylesheet" href="OzoneAlerts/OzoneAlerts.css">```
 
-Remember to change file URLs in the above examples according to the structure of your project. 
+Remember to change the file paths in the above examples according to the structure of your project. 
 
 OzoneAlerts.js should now be ready for use. 
 
