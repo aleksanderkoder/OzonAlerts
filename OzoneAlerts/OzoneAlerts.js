@@ -133,7 +133,7 @@ class Ozone
 
           // Handles animations upon creation and deletion of Ozone element
           setTimeout(function () {
-            el.style.animation = "pulse 2s infinite";
+            el.style.animation = "ozpulse 2s infinite";
           }, 1000);
 
           // Finally appends alert box element to document
@@ -144,7 +144,7 @@ class Ozone
           {
             setTimeout(function () 
             {
-              el.style.animation = "fadeOut ease 1s";
+              el.style.animation = "ozfadeOut ease 1s";
             }, 7000);
 
             setTimeout(function () 
@@ -170,12 +170,11 @@ class Ozone
           // Function that removes a given Ozone-element with a fadeOut-effect
           function removeOzoneAlert(element)
           {
-            element.style.animation = "fadeOut ease 0.5s";
+            element.style.animation = "ozfadeOut ease 0.5s";
             setTimeout(function () 
             {
               element.parentNode.removeChild(element);
             }, 500);
           }
-          
         }
       }
