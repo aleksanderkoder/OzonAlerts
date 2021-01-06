@@ -8,7 +8,7 @@ Include the ***OzoneAlerts*** folder in your project folder.
 
 **OzoneAlerts.js** needs to be included with a script tag in your HTML as shown below:
 
-```<script type="text/javascript" src="OzoneAlerts/OzoneAlerts.js"></script>```
+```<script src="OzoneAlerts/OzoneAlerts.js"></script>```
 
 **OzoneAlerts.css** needs to be included using a link tag in your head section as shown below: 
 
