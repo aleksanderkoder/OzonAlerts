@@ -1,4 +1,4 @@
-![alt text](https://www.google.com/url?sa=i&url=https%3A%2F%2Fpixabay.com%2Fimages%2Fsearch%2Fnature%2F&psig=AOvVaw3BLpmBKLJyKvOKlJrQ1VKR&ust=1612100544000000&source=images&cd=vfe&ved=0CAIQjRxqFwoTCIjNr9Tkw-4CFQAAAAAdAAAAABAD)
+![alt text](https://cdn.pixabay.com/photo/2015/04/23/22/00/tree-736885__340.jpg)
 
 # OzoneAlerts.js
  
