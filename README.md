@@ -64,7 +64,7 @@ The third parameter *position* controls where on the screen the alert should be 
  6. "bottom-right" - Bottom right corner of screen.
  7. "center" - Horizontal and vertical center of screen. 
 
-The fourth parameter *type* (optional) chooses what type of alert should be shown. There are two options:
+The fourth parameter *"type"* (optional) chooses what type of alert should be shown. There are two options:
  1. "notification" - (default) The standard slim variant. 
  2. "dialog" - The full-sized variant allowing user input via programmable buttons. 
 
