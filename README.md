@@ -4,7 +4,7 @@
  
 A pretty and easy-to-use Javascript framework for customizable popup boxes, featuring a modern and elegant design. 
 
-## Installation
+## Getting started
 
 Include the ***OzoneAlerts*** folder in your project folder.  
 
