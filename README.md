@@ -79,4 +79,4 @@ The sixt parameter *"cancelButtonText"* (optional) sets the text shown inside th
   - See the "advanced usage" example under the *Usage* section for an exact example of how these parameters can be used. 
   
 ## Dependencies 
-  - Font Awesome (https://fontawesome.com/) - Needed for icons to appear. 
+  - Font Awesome (https://fontawesome.com/) - Needed for icons to appear. Include it within the head tag of your HTML. 
