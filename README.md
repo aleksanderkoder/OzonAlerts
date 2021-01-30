@@ -1,4 +1,4 @@
-![alt text](https://ibb.co/SKCQs8G)
+![OzoneAlerts logo](https://ibb.co/Z6T5Jm1)
 
 # OzoneAlerts.js
  
