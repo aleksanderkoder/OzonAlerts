@@ -77,6 +77,10 @@ The sixt parameter *"cancelButtonText"* (optional) sets the text shown inside th
  The seventh and eight parameters *"onConfirm"* (optional) and *"onCancel"* (optional) controls what should happen when each of the two dialog buttons are pressed.
  These parameters take a function containing whatever code you want. 
   - See the "advanced usage" example under the *Usage* section for an exact example of how these parameters can be used. 
-  
+ 
+## Visual customization 
+
+The alerts can be easily customized via the *OzoneAlerts.css* style sheet. This requires basic knowledge of CSS, however.
+ 
 ## Dependencies 
   - Font Awesome (https://fontawesome.com/) - Needed for icons to appear. Include it within the head tag of your HTML. 
