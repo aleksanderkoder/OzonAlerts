@@ -2,7 +2,7 @@
   <img src="https://i.ibb.co/C50gt2s/ozone-logo.png" alt="OzoneAlerts logo">
 </p>
  
-A pretty and easy-to-use Javascript framework for customizable popup boxes, featuring a modern and elegant design. 
+A pretty, yet easy-to-use Javascript framework for customizable popup boxes, featuring a modern and elegant design. 
 
 ## Getting started
 
