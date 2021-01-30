@@ -48,12 +48,12 @@ Ozone.fire(icon, message, position, type, confirmButtonText, cancelButtonText, o
 
 *The first three parameters are required.*
 
-The first parameter *icon* will choose what icon is used. There are three options:
+The first parameter *"icon"* will choose what icon is used. There are three options:
  1. "success"
  2. "error"
  3. "info"
  
-The second parameter *message* is where you input the message you want to show in your alert. 
+The second parameter *"message"* is where you input the message you want to show in your alert. 
 
 The third parameter *position* controls where on the screen the alert should be positioned. There are 6 options: 
  1. "top-left" - Top left corner of screen. 
@@ -68,13 +68,13 @@ The fourth parameter *"type"* (optional) chooses what type of alert should be sh
  1. "notification" - (default) The standard slim variant. 
  2. "dialog" - The full-sized variant allowing user input via programmable buttons. 
 
-The fifth parameter *confirmButtonText* (optional) sets the text shown inside the "confirm" dialog button.
+The fifth parameter *"confirmButtonText"* (optional) sets the text shown inside the "confirm" dialog button.
  - Example value: "I got it!"
 
-The sixt parameter *cancelButtonText* (optional) sets the text shown inside the "cancel" dialog button.
+The sixt parameter *"cancelButtonText"* (optional) sets the text shown inside the "cancel" dialog button.
  - Example value: "No thanks!"
  
- The seventh and eight parameters *onConfirm* and *onCancel* (optional) controls what should happen when each of the two dialog buttons are pressed.
+ The seventh and eight parameters *"onConfirm"* (optional) and *"onCancel"* (optional) controls what should happen when each of the two dialog buttons are pressed.
  These parameters take a function containing whatever code you want. 
   - See the "advanced usage" example under the *Usage* section for an exact example of how these parameters can be used. 
   
