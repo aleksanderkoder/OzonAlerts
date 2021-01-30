@@ -1,3 +1,5 @@
+![alt text](https://www.google.com/url?sa=i&url=https%3A%2F%2Fpixabay.com%2Fimages%2Fsearch%2Fnature%2F&psig=AOvVaw3BLpmBKLJyKvOKlJrQ1VKR&ust=1612100544000000&source=images&cd=vfe&ved=0CAIQjRxqFwoTCIjNr9Tkw-4CFQAAAAAdAAAAABAD)
+
 # OzoneAlerts.js
  
 A pretty and easy-to-use Javascript framework for customizable popup boxes, featuring a modern and elegant design. 
