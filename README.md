@@ -79,5 +79,4 @@ The sixt parameter *cancelButtonText* (optional) sets the text shown inside the 
   - See the "advanced usage" example under the *Usage* section for an exact example of how these parameters can be used. 
   
 ## Dependencies 
-  - Font Awesome (https://fontawesome.com/)
-    Needed for icons to show up. 
+  - Font Awesome (https://fontawesome.com/) - Needed for icons to appear. 
