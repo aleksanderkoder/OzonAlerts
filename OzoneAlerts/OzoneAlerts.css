@@ -27,21 +27,17 @@
   margin: auto; 
 }
 
-
-#OzoneTable button { 
+/* Styles the buttons used for the dialog type */
+#OzoneBtnConfirm {
+  margin-right: 30px; 
+  transition: 0.3s;
   border-radius: 2px;
   border: none; 
   padding: 8px;
   padding-left: 15px; 
   padding-right: 15px;
   outline: none;
-  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;;
-}
-
-/* Styles the buttons used for the dialog type */
-#OzoneBtnConfirm {
-  margin-right: 30px; 
-  transition: 0.3s;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 }
 
 #OzoneBtnConfirm:hover {
@@ -53,6 +49,13 @@
 #OzoneBtnCancel {
   margin-left: 30px;
   transition: 0.3s;
+  border-radius: 2px;
+  border: none; 
+  padding: 8px;
+  padding-left: 15px; 
+  padding-right: 15px;
+  outline: none;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 }
 
 #OzoneBtnCancel:hover {
