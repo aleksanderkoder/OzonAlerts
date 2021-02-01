@@ -1,10 +1,4 @@
 <p align="center">
-  <img src="https://i.ibb.co/Pw7jy22/e.png" alt="OzoneAlerts logo">
-</p>
- <p align="center">
-  <img src="https://i.ibb.co/NTBgRNz/ozone-logo-alt-3.png" alt="OzoneAlerts logo">
-</p>
-<p align="center">
   <img src="https://i.ibb.co/PZxZT8Z/ozone-logo-alt-7.png" alt="OzoneAlerts logo">
 </p>
 
