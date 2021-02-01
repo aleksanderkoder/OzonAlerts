@@ -4,6 +4,9 @@
  <p align="center">
   <img src="https://i.ibb.co/NTBgRNz/ozone-logo-alt-3.png" alt="OzoneAlerts logo">
 </p>
+<p align="center">
+  <img src="https://i.ibb.co/PZxZT8Z/ozone-logo-alt-7.png" alt="OzoneAlerts logo">
+</p>
 
 A pretty, yet easy-to-use Javascript framework for customizable popup boxes, featuring a modern and elegant design. 
 
