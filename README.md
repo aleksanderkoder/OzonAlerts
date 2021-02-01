@@ -55,7 +55,7 @@ The first parameter *"icon"* will choose what icon is used. There are three opti
  
 The second parameter *"message"* is where you input the message you want to show in your alert. 
 
-The third parameter *position* controls where on the screen the alert should be positioned. There are 6 options: 
+The third parameter *"position"* controls where on the screen the alert should be positioned. There are 6 options: 
  1. "top-left" - Top left corner of screen. 
  2. "top-middle" - Top middle of screen.
  3. "top-right" - Top right corner of screen.
