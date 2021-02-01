@@ -5,7 +5,7 @@
   <img src="https://i.ibb.co/NTBgRNz/ozone-logo-alt-3.png" alt="OzoneAlerts logo">
 </p>
  <p align="center">
-  <img src="https://i.ibb.co/Gtz778K/ozone-logo-alt-4.png" alt="OzoneAlerts logo">
+  <img src="https://i.ibb.co/WKbPMgy/ozone-logo-alt-6.png" alt="OzoneAlerts logo">
 </p>
  <p align="center">
   <img src="https://i.ibb.co/ZXh0D8N/ozone-logo-alt-5.png" alt="OzoneAlerts logo">
