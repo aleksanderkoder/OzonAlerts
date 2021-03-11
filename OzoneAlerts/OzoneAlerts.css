@@ -1,7 +1,8 @@
 /* Styles the main div element  */
 .Ozone {
   position: absolute;
-  width: 310px;
+  min-width: 310px;
+  max-width: 20%;
   height: auto;
   margin: 20px;
   padding: 10px;
@@ -12,8 +13,6 @@
   text-align: center;
   color: white;
   background-color: rgba(0, 0, 0, 0.75);
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
   font-family: "Roboto";
   text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.5);
   animation: ozfadeIn ease 0.5s;
