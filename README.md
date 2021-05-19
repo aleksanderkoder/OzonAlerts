@@ -1,7 +1,6 @@
 <p align="center">
+   ```<link rel="stylesheet" href="OzoneAlerts/OzoneAlerts.css">```![ozone logo alt 7](https://user-images.githubusercontent.com/49065176/118849587-2b0e5500-b8d0-11eb-9b7c-8fe8beb3fd14.png)
 </p>
-
-```<link rel="stylesheet" href="OzoneAlerts/OzoneAlerts.css">```![ozone logo alt 7](https://user-images.githubusercontent.com/49065176/118849587-2b0e5500-b8d0-11eb-9b7c-8fe8beb3fd14.png)
 
 A pretty, yet easy-to-use Javascript framework for customizable popup boxes, featuring a modern and elegant design. 
 
