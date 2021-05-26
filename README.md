@@ -14,7 +14,7 @@ Include the ***OzoneAlerts*** folder in your project folder.
 
 **OzoneAlerts.css** needs to be included using a link tag in your head section as shown below: 
 
-```<link rel="stylesheet" href="OzoneAlerts/OzoneAlerts.css">
+```<link rel="stylesheet" href="OzoneAlerts/OzoneAlerts.css">```
 
 Remember to change the file paths in the above examples according to the structure of your project. 
 
