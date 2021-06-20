@@ -14,7 +14,7 @@ class Ozone
           const contentData2 = document.createElement("td");
           contentData2.style.width = "100%";
 
-          // Creates necessary remaining html elements
+          // Appends elements to parent element
           el.appendChild(content);
           content.appendChild(contentRow1);
           contentRow1.appendChild(contentData1);
@@ -128,10 +128,10 @@ class Ozone
             el.style.animation = "ozpulse 2s infinite";
           }, 1000);
 
-          // Finally appends alert box element to document
+          // Finally appends Ozone alert element to document body
           document.body.appendChild(el);
           
-          // Handles behavior of Ozone-alert upon deletion based on type
+          // Handles behavior of Ozone alert upon deletion based on type
           if (type == "notification")
           {
             setTimeout(function () 
