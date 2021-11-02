@@ -1,0 +1,30 @@
+{
+  "name": "ozonealertsjs",
+  "version": "1.1.0",
+  "description": "A pretty, yet easy-to-use framework for customizable popup boxes for the web, featuring a modern and elegant design.",
+  "main": "OzoneAlerts.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/aleksanderkoder/OzoneAlerts.js.git"
+  },
+  "keywords": [
+    "alert",
+    "ozone",
+    "ozonealerts",
+    "js",
+    "popup",
+    "box",
+    "boxes",
+    "modal",
+    "modals"
+  ],
+  "author": "aleksander.johans@gmail.com",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/aleksanderkoder/OzoneAlerts.js/issues"
+  },
+  "homepage": "https://github.com/aleksanderkoder/OzoneAlerts.js#readme"
+}
