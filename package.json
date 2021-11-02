@@ -19,7 +19,8 @@
     "box",
     "boxes",
     "modal",
-    "modals"
+    "modals",
+    "notification"
   ],
   "author": "aleksander.johans@gmail.com",
   "license": "MIT",
