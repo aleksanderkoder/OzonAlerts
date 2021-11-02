@@ -22,7 +22,7 @@ class Ozone {
     el.appendChild(divMessage);
 
     // Sets message based on parameter "message"
-    divMessage.innerHTML = message;
+    divMessage.innerHTML = "<p>" + message + "</p>";
 
     // Handles icon selection based on parameter "icon"
     if (icon == "success") {
@@ -34,9 +34,11 @@ class Ozone {
     }
     // Creates Ozone instance of type "dialog" based on "type" parameter
     if (type == "dialog") {
+      // Necessary changes to styling for dialog
       el.style.flexDirection = "column";
       divIcon.style.position = "relative"; 
       divIcon.style.left = "0px";
+      divIcon.style.marginTop = "15px";
 
       // Creates necessary table elements for dialog
       const divControls = document.createElement("div");

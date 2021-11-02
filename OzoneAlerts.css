@@ -9,7 +9,7 @@
   max-width: 20%;
   height: auto;
   margin: 20px;
-  padding: 10px;
+  /* padding: 10px; */
   padding-left: 25px;
   padding-right: 25px;
   border-radius: 3px;
@@ -33,14 +33,13 @@
 .OzoneMessage {
   height: auto;
   width: 80%;
-  margin-top: 10px;
-  margin-bottom: 10px;
   overflow-wrap: break-word;
 }
 
 /* Styles the div container for the controls */
 .OzoneControls {
   margin-top: 10px;
+  margin-bottom: 15px;
 }
 
 /* Styles the buttons used for the dialog type */
