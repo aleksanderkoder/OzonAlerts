@@ -3,10 +3,8 @@ class Ozone {
     icon,
     message,
     position,
-    options = {},
     type = "notification",
-    confirmButtonText = "Confirm",
-    cancelButtonText = "Cancel",
+    options = {},
     onConfirm = function () {},
     onCancel = function () {}
   ) {
@@ -46,11 +44,11 @@ class Ozone {
       divControls.className = "OzoneControls";
 
       const btnConfirm = document.createElement("button");
-      btnConfirm.id = "OzoneBtnConfirm";
-      btnConfirm.innerHTML = confirmButtonText;
+      btnConfirm.className = "OzoneBtnConfirm";
+      btnConfirm.innerHTML = "Confirm";
       const btnCancel = document.createElement("button");
-      btnCancel.id = "OzoneBtnCancel";
-      btnCancel.innerHTML = cancelButtonText;
+      btnCancel.className = "OzoneBtnCancel";
+      btnCancel.innerHTML = "Cancel";
 
       // Appends elements to parent element
       el.appendChild(divControls);
@@ -67,6 +65,28 @@ class Ozone {
         onCancel();
         removeOzoneAlert(el);
       };
+
+      // Sets dialog specific options based on "options" object parameter
+      if(Object.keys(options).length > 0) {
+        if(options.confirmButtonText) {
+          btnConfirm.innerHTML = options.confirmButtonText;
+        }
+        if(options.cancelButtonText) {
+          btnCancel.innerHTML = options.cancelButtonText;
+        }
+        if(options.confirmButtonColor) {
+          btnConfirm.style.backgroundColor = options.confirmButtonColor;
+        }
+        if(options.cancelButtonColor) {
+          btnCancel.style.backgroundColor = options.cancelButtonColor;
+        }
+        if(options.confirmButtonRadius) {
+          btnConfirm.style.borderRadius = options.confirmButtonRadius;
+        }
+        if(options.cancelButtonRadius) {
+          btnCancel.style.borderRadius = options.cancelButtonRadius;
+        }
+      }
     }
 
     // Handles position based on parameter "position"
@@ -115,7 +135,7 @@ class Ozone {
         break;
     }
 
-    // Sets options based on "options" object passed as parameter
+    // Sets general options based on "options" object passed as parameter
     if(Object.keys(options).length > 0) {
       if(options.backgroundColor) {
         el.style.backgroundColor = options.backgroundColor;
@@ -132,24 +152,15 @@ class Ozone {
       if(options.border) {
         el.style.border = options.border;
       }
-
-      if(type == "dialog") {
-        if(options.confirmButtonColor) {
-          document.getElementById("OzoneBtnConfirm").style.backgroundColor = options.confirmButtonColor;
-        }
-        if(options.cancelButtonColor) {
-          btnCancel.style.backgroundColor = options.cancelButtonColor;
-        }
-      }
     }
+
+    // Finally appends Ozone alert element to document body
+    document.body.appendChild(el);
 
     // Handles animations upon creation and deletion of Ozone element
     setTimeout(() => {
       el.style.animation = "ozPulse 2s infinite";
     }, 1000);
-
-    // Finally appends Ozone alert element to document body
-    document.body.appendChild(el);
 
     // Handles behavior of Ozone alert upon deletion based on type
     if (type == "notification") {
@@ -167,7 +178,7 @@ class Ozone {
       element.style.animation = "ozFadeOut ease 0.5s";
       setTimeout(() => {
         element.parentNode.removeChild(element);
-      }, 500);
+      }, 495);
     }
   }
 }
