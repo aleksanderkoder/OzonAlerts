@@ -3,6 +3,7 @@ class Ozone {
     icon,
     message,
     position,
+    options = {},
     type = "notification",
     confirmButtonText = "Confirm",
     cancelButtonText = "Cancel",
@@ -26,11 +27,11 @@ class Ozone {
 
     // Handles icon selection based on parameter "icon"
     if (icon == "success") {
-      divIcon.innerHTML = '<i style=" color: white;" class="fas fa-check"></i>';
+      divIcon.innerHTML = '<i class="fas fa-check"></i>';
     } else if (icon == "error") {
-      divIcon.innerHTML = '<i style="color: white;" class="fas fa-times"></i>';
+      divIcon.innerHTML = '<i class="fas fa-times"></i>';
     } else if (icon == "info") {
-      divIcon.innerHTML = '<i style="color: white;" class="fas fa-info"></i>';
+      divIcon.innerHTML = '<i class="fas fa-info"></i>';
     }
     // Creates Ozone instance of type "dialog" based on "type" parameter
     if (type == "dialog") {
@@ -114,9 +115,37 @@ class Ozone {
         break;
     }
 
+    // Sets options based on "options" object passed as parameter
+    if(Object.keys(options).length > 0) {
+      if(options.backgroundColor) {
+        el.style.backgroundColor = options.backgroundColor;
+      }
+      if(options.fontColor) {
+        divMessage.style.color = options.fontColor;
+      }
+      if(options.iconColor) {
+        divIcon.style.color = options.iconColor;
+      }
+      if(options.borderRadius) {
+        el.style.borderRadius = options.borderRadius;
+      }
+      if(options.border) {
+        el.style.border = options.border;
+      }
+
+      if(type == "dialog") {
+        if(options.confirmButtonColor) {
+          document.getElementById("OzoneBtnConfirm").style.backgroundColor = options.confirmButtonColor;
+        }
+        if(options.cancelButtonColor) {
+          btnCancel.style.backgroundColor = options.cancelButtonColor;
+        }
+      }
+    }
+
     // Handles animations upon creation and deletion of Ozone element
     setTimeout(() => {
-      el.style.animation = "ozpulse 2s infinite";
+      el.style.animation = "ozPulse 2s infinite";
     }, 1000);
 
     // Finally appends Ozone alert element to document body
@@ -125,7 +154,7 @@ class Ozone {
     // Handles behavior of Ozone alert upon deletion based on type
     if (type == "notification") {
       setTimeout(() => {
-        el.style.animation = "ozfadeOut ease 1s";
+        el.style.animation = "ozFadeOut ease 1s";
       }, 7000);
 
       setTimeout(() => {
@@ -135,7 +164,7 @@ class Ozone {
 
     // Function that removes a given Ozone-element with a fadeOut-effect
     function removeOzoneAlert(element) {
-      element.style.animation = "ozfadeOut ease 0.5s";
+      element.style.animation = "ozFadeOut ease 0.5s";
       setTimeout(() => {
         element.parentNode.removeChild(element);
       }, 500);
