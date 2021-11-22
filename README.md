@@ -26,16 +26,18 @@ OzoneAlerts.js should now be ready for use.
 
 Basic usage: 
 ```javascript
-Ozone.fire("success", "Hello, world!", "top-left")
+Ozone.fire("success", "Hello, world!", "top-left");
 ```
 Advanced usage: 
 ```javascript
-Ozone.fire("success", "Would you like a cinnamon roll?", "top-left", "dialog", "Yes thanks!", "No thanks!", 
+let options = {backgroundColor: "green", fontColor: "#8b0000"};
+
+Ozone.fire("success", "Would you like a cinnamon roll?", "top-left", "dialog", options, 
    function () { 
       alert("You just pressed the confirm button!")}, 
    function () {
       alert("You just pressed the cancel button!")}
-      )
+      );
 ```
 
 
@@ -43,7 +45,7 @@ Ozone.fire("success", "Would you like a cinnamon roll?", "top-left", "dialog", "
 
 Method parameter structure:
 ```javascript
-Ozone.fire(icon, message, position, type, confirmButtonText, cancelButtonText, onConfirm, onCancel)
+Ozone.fire(icon, message, position, type, options, onConfirm, onCancel); 
 ```
 
 *The first three parameters are required.*
@@ -68,19 +70,49 @@ The fourth parameter *"type"* (optional) chooses what type of alert should be sh
  1. "notification" - (default) The standard slim variant. 
  2. "dialog" - The full-sized variant allowing user input via programmable buttons. 
 
-The fifth parameter *"confirmButtonText"* (optional) sets the text shown inside the "confirm" dialog button.
- - Example value: "I got it!"
+The fifth parameter *"options"* (optional) is an object containing different properties which are used to configure the alert visually. Create an object containing the options you want and pass it as a parameter to the  *Ozone.fire()* method.
+An example of the options object:
 
-The sixt parameter *"cancelButtonText"* (optional) sets the text shown inside the "cancel" dialog button.
- - Example value: "No thanks!"
+```javascript 
+let options = {backgroundColor: "green", fontColor: "#8b0000"};  
+```
  
- The seventh and eight parameters *"onConfirm"* (optional) and *"onCancel"* (optional) controls what should happen when each of the two dialog buttons are pressed.
- These parameters take a function containing whatever code you want. 
+ The sixt and seventh parameters *"onConfirm"* (optional) and *"onCancel"* (optional) controls what should happen when each of the two dialog buttons are pressed.
+ These parameters take a function containing whatever code you want. If no code is provided and the buttons are clicked, the button will close the dialog only. 
   - See the "advanced usage" example under the *Usage* section for an exact example of how these parameters can be used. 
  
 ## Visual customization 
 
-The alerts can be easily customized via the *OzoneAlerts.css* style sheet. This requires basic knowledge of CSS, however.
+**OzoneAlerts.js** can be visually customized using the *"options"* parameter, using an object containing the wanted properties. These options are split into two categories. One that is relevant for both types ("notification" and "dialog"), and one that is only applied for the "dialog" type alert. All standard CSS values are valid for the specified properties.
+
+The general customization options available are: 
+ 1. **backgroundColor** - Sets the "background-color" CSS property for the alert element.
+     - Example value: "green", "#8b0000" etc. 
+ 2. **fontColor** - Sets the "font-color" CSS property for the alert element.
+     - Example value: "red", "#FFFF00" etc. 
+ 3. **iconColor** - Sets the color CSS property for the icon in the alert element.
+     - Example value: "black", "#000000" etc.  
+ 4. **borderRadius** - Sets the "border-radius" CSS property for the alert element. 
+     - Example value: "5px"
+ 5. **border** - Sets the "border" CSS property for the alert element. 
+     - Example value: "5px solid white" 
+
+The "dialog" specific customization options available are: 
+ 1. **confirmButtonText** - Sets the inner text of the confirmation button. 
+     - Example value: "Hello, world!"
+ 2. **cancelButtonText** - Sets the inner text of the cancellation button.
+     - Example value: "Goodbye, world!"
+ 3. **confirmButtonColor** - Sets the "background-color" CSS property for the confirmation button.
+     - Example value: "green", "#8b0000" etc. 
+ 4. **cancelButtonColor** - Sets the "background-color" CSS property for the cancellation button. 
+     - Example value: "red", "#008080" etc. 
+ 5. **confirmButtonRadius** - Sets the "border-radius" CSS property for the confirmation button. 
+     - Example value: "5px"
+ 6. **cancelButtonRadius** - Sets the "border-radius" CSS property for the cancellation button.
+     - Example value: "15px"
+
+
+If you require more control over the visuals, the alerts can be customized via the *OzoneAlerts.css* style sheet. This requires basic knowledge of CSS, however.
  
 ## Dependencies 
   - Font Awesome (https://fontawesome.com/) - Needed for icons to appear. Include it within the head tag of your HTML. 
