@@ -87,29 +87,29 @@ let options = {backgroundColor: "green", fontColor: "#8b0000"};
 
 The general customization options available are: 
  1. **backgroundColor** - Sets the "background-color" CSS property for the alert element.
-   - Example value: "green", "#8b0000" etc. 
+     - Example value: "green", "#8b0000" etc. 
  2. **fontColor** - Sets the "font-color" CSS property for the alert element.
-   - Example value: "red", "#FFFF00" etc. 
+     - Example value: "red", "#FFFF00" etc. 
  3. **iconColor** - Sets the color CSS property for the icon in the alert element.
-   - Example value: "black", "#000000" etc.  
+     - Example value: "black", "#000000" etc.  
  4. **borderRadius** - Sets the "border-radius" CSS property for the alert element. 
      - Example value: "5px"
  5. **border** - Sets the "border" CSS property for the alert element. 
-   - Example value: "5px solid white" 
+     - Example value: "5px solid white" 
 
 The "dialog" specific customization options available are: 
  1. **confirmButtonText** - Sets the inner text of the confirmation button. 
-   - Example value: "Hello, world!"
+     - Example value: "Hello, world!"
  2. **cancelButtonText** - Sets the inner text of the cancellation button.
-   - Example value: "Goodbye, world!"
+     - Example value: "Goodbye, world!"
  3. **confirmButtonColor** - Sets the "background-color" CSS property for the confirmation button.
-   - Example value: "green", "#8b0000" etc. 
+     - Example value: "green", "#8b0000" etc. 
  4. **cancelButtonColor** - Sets the "background-color" CSS property for the cancellation button. 
-   - Example value: "red", "#008080" etc. 
+     - Example value: "red", "#008080" etc. 
  5. **confirmButtonRadius** - Sets the "border-radius" CSS property for the confirmation button. 
-   - Example value: "5px"
+     - Example value: "5px"
  6. **cancelButtonRadius** - Sets the "border-radius" CSS property for the cancellation button.
-   - Example value: "15px"
+     - Example value: "15px"
 
 
 If you require more control over the visuals, the alerts can be customized via the *OzoneAlerts.css* style sheet. This requires basic knowledge of CSS, however.
