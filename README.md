@@ -78,7 +78,7 @@ let options = {backgroundColor: "green", fontColor: "#8b0000"};
 ```
  
  The sixt and seventh parameters *"onConfirm"* (optional) and *"onCancel"* (optional) controls what should happen when each of the two dialog buttons are pressed.
- These parameters take a function containing whatever code you want. 
+ These parameters take a function containing whatever code you want. If no code is provided and the buttons are clicked, the button will close the dialog only. 
   - See the "advanced usage" example under the *Usage* section for an exact example of how these parameters can be used. 
  
 ## Visual customization 
