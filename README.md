@@ -93,7 +93,7 @@ The general customization options available are:
  3. **iconColor** - Sets the color CSS property for the icon in the alert element.
    - Example value: "black", "#000000" etc.  
  4. **borderRadius** - Sets the "border-radius" CSS property for the alert element. 
-   - Example value: "5px"
+     - Example value: "5px"
  5. **border** - Sets the "border" CSS property for the alert element. 
    - Example value: "5px solid white" 
 
