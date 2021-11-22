@@ -70,7 +70,7 @@ The fourth parameter *"type"* (optional) chooses what type of alert should be sh
  1. "notification" - (default) The standard slim variant. 
  2. "dialog" - The full-sized variant allowing user input via programmable buttons. 
 
-The fifth parameter *"options"* (optional) is an object containing different properties which are used to configure the alert visually. Create and object containing the options you want and pass it as a parameter to the  *Ozone.fire()* method.
+The fifth parameter *"options"* (optional) is an object containing different properties which are used to configure the alert visually. Create an object containing the options you want and pass it as a parameter to the  *Ozone.fire()* method.
 An example of the options object:
 
 ```javascript 
