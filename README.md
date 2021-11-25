@@ -90,7 +90,7 @@ The general customization options available are:
      - Example value: "green", "#8b0000" etc. 
  2. **fontColor** - Sets the "font-color" CSS property for the alert element.
      - Example value: "red", "#FFFF00" etc. 
- 3. **iconColor** - Sets the color CSS property for the icon in the alert element.
+ 3. **iconColor** - Sets the "color" CSS property for the icon in the alert element.
      - Example value: "black", "#000000" etc.  
  4. **borderRadius** - Sets the "border-radius" CSS property for the alert element. 
      - Example value: "5px"
