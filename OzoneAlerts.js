@@ -67,23 +67,23 @@ class Ozone {
       };
 
       // Sets dialog specific options based on "options" object parameter
-      if(Object.keys(options).length > 0) {
-        if(options.confirmButtonText) {
+      if (Object.keys(options).length > 0) {
+        if (options.confirmButtonText) {
           btnConfirm.innerHTML = options.confirmButtonText;
         }
-        if(options.cancelButtonText) {
+        if (options.cancelButtonText) {
           btnCancel.innerHTML = options.cancelButtonText;
         }
-        if(options.confirmButtonColor) {
+        if (options.confirmButtonColor) {
           btnConfirm.style.backgroundColor = options.confirmButtonColor;
         }
-        if(options.cancelButtonColor) {
+        if (options.cancelButtonColor) {
           btnCancel.style.backgroundColor = options.cancelButtonColor;
         }
-        if(options.confirmButtonRadius) {
+        if (options.confirmButtonRadius) {
           btnConfirm.style.borderRadius = options.confirmButtonRadius;
         }
-        if(options.cancelButtonRadius) {
+        if (options.cancelButtonRadius) {
           btnCancel.style.borderRadius = options.cancelButtonRadius;
         }
       }
@@ -136,20 +136,20 @@ class Ozone {
     }
 
     // Sets general options based on "options" object passed as parameter
-    if(Object.keys(options).length > 0) {
-      if(options.backgroundColor) {
+    if (Object.keys(options).length > 0) {
+      if (options.backgroundColor) {
         el.style.backgroundColor = options.backgroundColor;
       }
-      if(options.fontColor) {
+      if (options.fontColor) {
         divMessage.style.color = options.fontColor;
       }
-      if(options.iconColor) {
+      if (options.iconColor) {
         divIcon.style.color = options.iconColor;
       }
-      if(options.borderRadius) {
+      if (options.borderRadius) {
         el.style.borderRadius = options.borderRadius;
       }
-      if(options.border) {
+      if (options.border) {
         el.style.border = options.border;
       }
     }
